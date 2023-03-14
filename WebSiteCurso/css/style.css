@@ -2,6 +2,16 @@
     margin: 0;
     padding: 0;
 }
+.close {
+    margin-top: -20px;
+    margin-right: -20px;
+    font-size: 3vh;
+    float: right;
+    cursor: pointer;
+}
+.close:hover{
+    color: #fe6a01;
+}
 
 .main {
     width: 100%;
