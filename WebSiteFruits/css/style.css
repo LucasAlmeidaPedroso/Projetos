@@ -81,9 +81,7 @@ ul {
 .coluna-direita {
     width: 100%;
 }
-.coluna-direita img {
-    width: 90vh;
-}
+
 .pesquisa {
     width: 40%;
     display: flex;
@@ -183,9 +181,11 @@ ul {
     border-top: 30px solid rgb(255, 83, 85);
     border-radius: 35px;
     position: absolute;
+    width: 0vh;
     margin-left: 35vh;
     height: 0vh;
     background-color: rgb(255, 234, 233);
+    text-align: j;
 }
 
 .saibamais img {
@@ -201,8 +201,8 @@ ul {
     font-size: 30px;
 }
 
-.saibamais h3 {
-    margin-top:0px;
+.saibamais .title-saibamais h3 {
+    margin-top: 30px;
 }
 
 .saibamais button {
