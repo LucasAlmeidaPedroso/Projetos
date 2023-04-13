@@ -35,7 +35,7 @@ html {
     top: 0;
     left: 0;
     right: 0;
-    /* z-index: 1000; */
+    z-index: 1000;
     box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .1);
     display: flex;
     align-items: center;
@@ -45,6 +45,7 @@ html {
 
 .header .logo {
     color: var(--green);
+    font-size: 150%;
 }
 
 .header .navbar a {
@@ -109,28 +110,45 @@ html {
 
     .header .navbar {
         position: absolute;
-        top: 115%;
-        right: 2rem;
+        top: 115%; right: 2rem;
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         width: 30rem;
         border: var(--border);
         background: #ffff;
-        /* transform: scale(0); */
+        transform: scale(0);
         opacity: 0;
         transform-origin: top right;
         transition: none;
+   
     }
     .header .navbar.active{
-        transform: scale(10);
+        transform: scale(1);
         opacity: 10;
         transition: .2s ease-out;
+        display: block;
+        
     }
 
-    /* .header .navbar a{
+    .header .navbar a{
+        display: block;
         font-size:2rem;
-        display: inline-block;
         margin: 2.5rem;
-    } */
+        position: relative;
+    }
+    .header .navbar a::after{
+        content: '';
+        width: 0%;
+        height: 10px;
+        background-color: var(--green);
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: +4vh;
+        transition: 0.4s;
+    }
+    .header .navbar a:hover::after{
+        width: 100%;
+    }
 
 }
