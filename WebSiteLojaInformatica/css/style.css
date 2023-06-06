@@ -1,0 +1,259 @@
+/* RESET CSS */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: 'Open sans' sans-serif;
+    font-weight: normal;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.menu li {
+    float: left;
+    padding-inline: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+p {
+    font-size: 1em;
+    color: #7777;
+}
+
+.cabecalho {
+    width: 100%;
+    padding: 70px 8%;
+    background-color: #13c7ae;
+}
+
+.logo {
+    margin-top: -20px;
+    width: 221px;
+    height: 48px;
+    float: left;
+    font-size: 0;
+}
+
+.logo a {
+    width: 221px;
+    height: 48px;
+    float: left;
+    background: url(../img/title.png);
+}
+
+.cabecalho form {
+    margin-top: -20px;
+    width: 30%;
+    float: right;
+}
+
+.cabecalho form input[type="search"] {
+    width: 85%;
+    float: left;
+    padding: 15px 10px 15px 10px;
+    border-radius: 15px 0 0 15px;
+    border: none
+}
+
+.cabecalho button {
+    width: 15%;
+    float: right;
+    padding: 15px 10px;
+    background-color: #0cae98;
+    border-radius: 0 15px 15px 0;
+    cursor: pointer;
+    border: none
+}
+
+.cabecalho button:hover {
+    background-color: #255d55;
+    color: white;
+
+}
+
+.menu {
+    width: 100%;
+    float: left;
+    background-color: black;
+    padding: 18px 8%;
+}
+.menuscroll{
+    position:fixed;
+    width: 100%;
+    float: left;
+    background-color: white;
+    padding: 18px 8%;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li:hover {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.menu a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+.menu li a {
+    color: white;
+    font-size: 18px;
+}
+
+
+
+.socialicons a {
+    float: right;
+    color: white;
+    margin-left: 13px;
+}
+
+#facebook:hover {
+    color: blue;
+}
+
+#twitter:hover {
+    color: aqua;
+}
+
+#instagram:hover {
+    color: rgb(230, 120, 120);
+}
+
+/* Principal */
+
+.principal {
+    width: 100%;
+    float: left;
+    padding: 20px 8%;
+}
+
+.sobre {
+    width: 70%;
+    float: left;
+    padding: 0 20px 20px 0;
+}
+
+.sobre h2 {
+    margin-bottom: 17px;
+}
+
+.sobre img {
+    width: 50%;
+    float: left;
+    border-radius: 10px;
+    margin: 0 15px 15px 0;
+}
+
+.sobre p {
+    text-align: justify;
+    color: black;
+}
+
+/* SIDEBAR */
+.onde-estamos {
+    width: 30%;
+    float: right;
+    padding: 10px 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+}
+
+.onde-estamos h2 {
+    margin-bottom: 7px;
+}
+
+.onde-estamos iframe {
+    width: 100%;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.onde-estamos li {
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.onde-estamos i {
+    margin-right: 5px;
+}
+
+/* Newsletter */
+.newsletter {
+    width: 100%;
+    float: left;
+    background-color: black;
+    padding: 50px 8%;
+    margin-bottom: 3.9%;
+}
+
+.newsletter h3 {
+    font-size: 1.8em;
+    color: white;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    color: white;
+}
+
+.newsletter form {
+    width: 100%;
+    float: left;
+    margin-top: 12px;
+}
+
+.newsletter form input {
+    width: 40%;
+    margin-right: 0.5%;
+    padding: 15px 10px;
+    border: solid 1px white;
+    border-radius: 8px;
+    color: white;
+    background-color: initial;
+    float: left;
+}
+
+.newsletter button {
+    width: 10%;
+    color: white;
+    padding: 15px 10px;
+    border-radius: 30px;
+    float: left;
+    border: solid 1px white;
+    cursor: pointer;
+    background-color: initial;
+}
+.newsletter button:hover {
+    background-color: white;
+    color: black;
+    
+}
+.rodape{
+    position: fixed;
+    top:92% ;
+    width: 100%;
+    text-align: center;
+    background-color: #0cae98;
+    padding: 20px 8%;
+}
+.rodape p{
+    color: white;
+}

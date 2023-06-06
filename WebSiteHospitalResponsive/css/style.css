@@ -29,6 +29,47 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 2rem 9%;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: .5rem;
+    padding-left: 1rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    color: var(--green);
+    cursor: pointer;
+    font-size: 1.7rem;
+    text-transform: none;
+}
+
+.btn span {
+    padding: .4rem 0.8rem;
+    border-radius: .3rem;
+    background: var(--green);
+    color: white;
+    margin-left: .5rem;
+}
+
+.btn:hover {
+    background: var(--green);
+    color: white;
+}
+
+.btn:hover span {
+    color: var(--green);
+    background-color: white;
+}
+
+
 .header {
     padding: 2rem 9%;
     position: fixed;
@@ -68,15 +109,140 @@ html {
     display: none;
 }
 
+.home {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 10rem;
+}
 
+.home .image {
+    flex: 1 1 45rem;
+}
 
+.home .image img {
+    width: 100%;
 
+}
 
+.home .content {
+    flex: 1 1 45rem;
+}
 
+.home .content h3 {
+    font-size: 4.5rem;
+    color: var(--black);
+    line-height: 1.8;
+    text-shadow: var(--text-shadow);
+}
 
+.home .content p {
+    font-size: 1.7rem;
+    color: var(--black);
+    line-height: 1.8;
+    padding: 1rem 0;
+}
 
+.icons-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 2fr));
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
 
+.icons-container .icons {
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border: var(--border);
+    border-radius: .5rem;
+    text-align: center;
+    padding: 2.0rem;
+}
 
+.icons-container .icons i {
+    font-size: 4.5rem;
+    color: var(--green);
+    padding-bottom: .7rem;
+}
+
+.icons-container .icons h3 {
+    font-size: 4.5rem;
+    color: var(--black);
+    padding-bottom: .5rem 0;
+    text-shadow: var(--text-shadow);
+}
+
+.icons-container .icons p {
+    font-size: 4.5rem;
+    color: var(--black);
+    padding-bottom: .5rem 0;
+}
+.icons-container .icons p{
+    font-size: 1.7rem;
+    color: var(--light-color);
+}
+
+.services .box-container {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 2fr));
+}
+.services .box-container .box{
+    text-align: center;
+    background: white;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    border:var(--border);
+    padding: 2.5rem;
+}
+.services .box-container .box i{
+    font-size: 4.5rem;
+    color: var(--green);
+    padding-bottom: .7rem;
+}
+.services .box-container .Texto{
+ text-align: justify;
+}
+
+.heading{
+    text-align: center;
+    padding-bottom: 2rem;
+    text-shadow: var(--text-shadow);
+    text-transform: uppercase;
+    color: var(--black);
+    font-size: 5rem; 
+    letter-spacing: 4.5rem;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.about .row .image{
+    flex: 1 1 45rem;
+}
+.about .row .image img{
+    width: 100%;
+}
+.about .row .content{
+    flex: 1 1 45rem;
+}
+.about .row .content h3{
+    color: var(--black);
+    text-shadow: var(--text-shadow);
+    font-size: 4rem;
+    line-height: 1.8;
+}
+.about .row .content p{
+    color: var(--light-color);
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
 
 
 
@@ -110,7 +276,8 @@ html {
 
     .header .navbar {
         position: absolute;
-        top: 115%; right: 2rem;
+        top: 115%;
+        right: 2rem;
         border-radius: .5rem;
         box-shadow: var(--box-shadow);
         width: 30rem;
@@ -120,23 +287,25 @@ html {
         opacity: 0;
         transform-origin: top right;
         transition: none;
-   
+
     }
-    .header .navbar.active{
+
+    .header .navbar.active {
         transform: scale(1);
         opacity: 10;
         transition: .2s ease-out;
         display: block;
-        
+
     }
 
-    .header .navbar a{
+    .header .navbar a {
         display: block;
-        font-size:2rem;
+        font-size: 2rem;
         margin: 2.5rem;
         position: relative;
     }
-    .header .navbar a::after{
+
+    .header .navbar a::after {
         content: '';
         width: 0%;
         height: 10px;
@@ -147,7 +316,8 @@ html {
         top: +4vh;
         transition: 0.4s;
     }
-    .header .navbar a:hover::after{
+
+    .header .navbar a:hover::after {
         width: 100%;
     }
 
