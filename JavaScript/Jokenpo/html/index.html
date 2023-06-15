@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <script src="../js/script.js"></script>
+
+    <title>Jokempo</title>
+</head>
+
+<body>
+    <div class="fundo">
+        <div class="titulo">
+            <h1 id="jogador1"></h1>
+            <img src="../img/JKP.PNG" alt="">
+            <h1 id="jogador2"></h1>
+
+            <p style="background-color: white; color: black;" id="vez"></p>
+        </div>
+        <button id="jg" class="jogar" onclick="iniciarJogo()">Jogar</button>
+        <div id="sbl" class="simbols">
+            <button id="Pedra" onclick="jogar('1')"> <img src="../img/Pedra.PNG"></button>
+            <button id="Papel" onclick="jogar('2')"> <img src="../img/Papel.PNG"></button>
+            <button id="Tesoura" onclick="jogar('3')"> <img src="../img/Tesoura.PNG"></button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

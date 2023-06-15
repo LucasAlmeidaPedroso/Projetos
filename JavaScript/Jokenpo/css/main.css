@@ -1,0 +1,50 @@
+body{
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+}
+h1{
+    color: white;
+    display: inline;
+}
+.jogadores{
+    
+}
+.fundo{margin-left: 10%;
+    height: 37rem;
+    width: 80%;
+    border: solid 15px white;
+    border-radius: 30%;
+    text-align: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/background.jpg);
+}
+.titulo img
+{
+    padding: 2%;
+    border-radius: 10%;
+    margin-top: 7%;
+}
+
+.jogar
+{
+    margin-top: 3%;
+    width: 15%;
+    background-color:white;
+    height: 3rem;
+    font-size: 100%;
+    border-radius: 50%;
+}
+.simbols {
+    display: none;
+}
+.simbols button
+{
+    border-radius: 25%;
+    display: inline;
+
+}
+.simbols img{
+    border-radius: 25%;
+}
