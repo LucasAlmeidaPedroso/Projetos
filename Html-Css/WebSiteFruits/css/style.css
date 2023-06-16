@@ -1,0 +1,450 @@
+<<<<<<< HEAD
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.header {
+    width: 80%;
+    margin: auto;
+}
+
+.header span {
+    color: crimson;
+}
+
+.title {
+    font-size: 6vh;
+}
+
+.navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative
+}
+
+.navbar ul li a::after {
+    content: '';
+    width: 0%;
+    height: 10px;
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4vh;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar-icons img {
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar-icons {
+    margin-left: 40px;
+}
+
+.banner {
+    display: flex;
+    margin-top: 80px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    flex-basis: 50%;
+}
+
+.coluna-direita {
+    width: 100%;
+}
+
+.pesquisa {
+    width: 40%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    margin: 10px 0 30px;
+}
+
+.pesquisa img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    margin-left: 15px;
+    font-size: 19px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 70vh;
+    transition: 0.5s;
+}
+
+.coluna-esquerda h1 {
+    font-size: 100px;
+}
+
+.coluna-esquerda h3 {
+    font-size: 35px;
+}
+
+.coluna-esquerda p {
+    font-size: 15px;
+    color: #999;
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.btn button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    cursor: pointer;
+    color: crimson;
+    background: transparent;
+}
+
+.btn button:hover {
+    background: linear-gradient(crimson, rgb(122, 10, 33));
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: white;
+}
+
+.social-icons {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    height: 20px;
+    margin: 0 14px;
+    cursor: pointer;
+
+}
+
+.social-icons::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: crimson;
+    position: absolute;
+    left: 220px;
+    top: 10px;
+
+}
+
+.social-icons:hover::after {
+    width: 70%;
+    transition: 2s;
+}
+
+.social-icons img:hover {
+    opacity: .9;
+    border: 2px solid crimson;
+    border-radius: 5px;
+
+}
+
+.saibamais {
+    display: none;
+    border: 8px solid rgb(255, 83, 85);
+    border-top: 30px solid rgb(255, 83, 85);
+    border-radius: 35px;
+    position: absolute;
+    width: 0vh;
+    margin-left: 35vh;
+    height: 0vh;
+    background-color: rgb(255, 234, 233);
+    text-align: j;
+}
+
+.saibamais img {
+    margin-bottom: 10px;
+}
+
+.saibamais .title-saibamais {
+    text-align: center;
+}
+
+.saibamais .title-saibamais h2 {
+    margin-top: 13px;
+    font-size: 30px;
+}
+
+.saibamais .title-saibamais h3 {
+    margin-top: 30px;
+}
+
+.saibamais button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1vh;
+    right: 2vh;
+    font-size: 5vh;
+
+}
+
+.saibamais button i:hover {
+    cursor: pointer;
+    zoom: 1.5;
+    color: rgb(177, 27, 27);
+
+
+=======
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Dosis', sans-serif;
+}
+
+.header {
+    width: 80%;
+    margin: auto;
+}
+
+.header span {
+    color: crimson;
+}
+
+.title {
+    font-size: 6vh;
+}
+
+.navbar {
+    margin: 30px auto;
+    display: flex;
+    align-items: center;
+}
+
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+.navbar ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 25px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    padding: 0 10px;
+    position: relative
+}
+
+.navbar ul li a::after {
+    content: '';
+    width: 0%;
+    height: 10px;
+    background-color: crimson;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -4vh;
+    border-radius: 10%;
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+.navbar-icons img {
+    height: 25px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.navbar-icons {
+    margin-left: 40px;
+}
+
+.banner {
+    display: flex;
+    margin-top: 80px;
+}
+
+.coluna-esquerda,
+.coluna-direita {
+    flex-basis: 50%;
+}
+
+.coluna-direita {
+    width: 100%;
+}
+
+.pesquisa {
+    width: 40%;
+    display: flex;
+    padding-bottom: 3px;
+    border-bottom: 1px solid white;
+    margin: 10px 0 30px;
+}
+
+.pesquisa img {
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.pesquisa input {
+    margin-left: 15px;
+    font-size: 19px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #999;
+    width: 70vh;
+    transition: 0.5s;
+}
+
+.coluna-esquerda h1 {
+    font-size: 100px;
+}
+
+.coluna-esquerda h3 {
+    font-size: 35px;
+}
+
+.coluna-esquerda p {
+    font-size: 15px;
+    color: #999;
+    margin: 50px 0;
+    text-align: justify;
+}
+
+.btn button {
+    padding: 7px 30px;
+    margin-right: 15px;
+    outline: none;
+    border: 1px solid crimson;
+    border-radius: 20px;
+    cursor: pointer;
+    color: crimson;
+    background: transparent;
+}
+
+.btn button:hover {
+    background: linear-gradient(crimson, rgb(122, 10, 33));
+    box-shadow: 0 2px 15px rgba(248, 38, 103, 0.26);
+    color: white;
+}
+
+.social-icons {
+    width: 250px;
+    text-align: center;
+    position: relative;
+    margin-top: 15px;
+}
+
+.social-icons img {
+    height: 20px;
+    margin: 0 14px;
+    cursor: pointer;
+
+}
+
+.social-icons::after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: crimson;
+    position: absolute;
+    left: 220px;
+    top: 10px;
+
+}
+
+.social-icons:hover::after {
+    width: 70%;
+    transition: 2s;
+}
+
+.social-icons img:hover {
+    opacity: .9;
+    border: 2px solid crimson;
+    border-radius: 5px;
+
+}
+
+.saibamais {
+    display: none;
+    border: 8px solid rgb(255, 83, 85);
+    border-top: 30px solid rgb(255, 83, 85);
+    border-radius: 35px;
+    position: absolute;
+    width: 0vh;
+    margin-left: 35vh;
+    height: 0vh;
+    background-color: rgb(255, 234, 233);
+    text-align: j;
+}
+
+.saibamais img {
+    margin-bottom: 10px;
+}
+
+.saibamais .title-saibamais {
+    text-align: center;
+}
+
+.saibamais .title-saibamais h2 {
+    margin-top: 13px;
+    font-size: 30px;
+}
+
+.saibamais .title-saibamais h3 {
+    margin-top: 30px;
+}
+
+.saibamais button {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 1vh;
+    right: 2vh;
+    font-size: 5vh;
+
+}
+
+.saibamais button i:hover {
+    cursor: pointer;
+    zoom: 1.5;
+    color: rgb(177, 27, 27);
+
+
+>>>>>>> 10c0157e74650a889dd564fc991000ba1d0fcef1
+}

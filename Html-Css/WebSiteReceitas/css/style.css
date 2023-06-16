@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Century;
+}
+
+header {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5)50%, rgba(0, 0, 0, 0.5)), url(../img/Home.png);
+    height: 100vh;
+    background-size: cover;
+    background-image: center;
+    min-height: 100px;
+
+}
+
+ul {
+    float: right;
+    list-style-type: none;
+    margin-top: 40px;
+    margin-right: 25px;
+    font-size: 17px;
+}
+
+ul li {
+    display: inline-block;
+    font-style: italic;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5s ease;
+
+}
+
+ul li a:hover {
+    background-color: white;
+    color: black;
+}
+ul li:active a{
+    background-color: white;
+    color: black;
+}
+.logo img{
+    float: left;
+    position: absolute;
+    top: 7%;
+    transform: translate(-50%,-30%);
+    width: 180px;
+    height: auto;
+}
+.main{
+    max-width: 1200px;
+    margin: auto;
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.title h1 {
+    color: white;
+    font-size: 85px;
+}
+.button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.btn{
+    border: 1px solid white;
+    padding: 5px 20px;
+    color: white;
+    transition: 1.0s ease;
+    font-size: 18px;
+    text-decoration: none;
+
+
+}
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+.submenu{
+    display: none;
+    top: 6%;
+    position: relative;
+}
+.submenu ul{
+    position: absolute;
+}
+
+.main ul li:hover .submenu{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -6px;
+}
+.main ul li:hover .submenu ul{
+    display: block;
+    margin: 6px;
+    text-align: center;
+}
+.main ul li:hover .submenu ul li{
+    color: black;
+    background-color: white;
+    padding: 5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    transition: 0.4s ease;
+    min-width: 170px;
+}
+.main ul li:hover .submenu ul li:last-child{
+    border-bottom: none;
+}

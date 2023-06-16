@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+}
+h2{
+    color: white;
+}h1{
+    margin-block-start: 0em; 
+    color: white;
+}
+input{
+    height: 1.5em;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+textarea{
+    width: 100%;
+    margin-top: 2em;
+}
+.container{
+    margin-top: 5%;
+    background-color: #1c1c1c;
+    display: inline-flex;
+    padding: 1.5em;
+    border-radius: 0.5em;
+    flex-direction: column;
+    align-items: center;
+    width: 20em;
+}
+
+.area{
+    display: flex;
+    justify-content: center;
+}
+
+button{
+    height: 3em;
+    width: 100%;
+    background-color: #00087e;
+    border-color: white;
+    border: solid 1px
+    border: none;
+    color: white;
+}
+button:hover{
+    cursor: pointer;
+}

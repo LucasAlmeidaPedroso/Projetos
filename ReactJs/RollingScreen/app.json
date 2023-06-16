@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "RollingScreen",
+    "slug": "RollingScreen",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/4.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/Praia.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "white"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/4.png",
+        "backgroundColor": "white"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

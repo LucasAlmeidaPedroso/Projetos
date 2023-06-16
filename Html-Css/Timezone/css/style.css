@@ -1,0 +1,37 @@
+button {
+    outline: none;
+    border: 1px solid #a25cf1;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+	background: linear-gradient(#15fb00ed, #000008);
+	box-shadow: 0 2px 15px rgba(255, 21, 0, 0.737);
+    font-style: italic;
+	margin-left: 55px;
+}
+button:hover {
+background: linear-gradient(#000000, #641cb6);
+box-shadow: 0 2px 15px rgba(119, 38, 248, 0.26);
+color: #fff;
+}
+body {
+	color-scheme: light dark;
+	color: rgba(255, 255, 255, 0.87);
+	background-color: #242424;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	margin-left: 35%;
+	margin-top: 20%;
+	background: linear-gradient(to left, #000101, #278200, #2d0282);
+	background-size: 500% 100%;
+	animation: degrade 5s infinite alternate;
+}
+
+@keyframes degrade {
+	0%{
+		background-position-x: 0%
+	}
+	
+	100% {
+		background-position-x: 100%
+	}
+}

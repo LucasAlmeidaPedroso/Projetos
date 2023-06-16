@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Awesome Cursor Animation On Mouse Click - HTML, CSS & Javascript</title>
+ 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor">
+    <div class="click-animation">
+      <div class="shape circle big"></div>
+      <div class="shape circle small"></div>
+      <div class="shape triangle yellow"></div>
+      <div class="shape triangle green"></div>
+      <div class="shape disc"></div>
+    </div>
+  </div>
+
+  <section class="home">
+    <h1>Clique Animado! </h1>
+    <p>Venha e clique na tela com alegria,
+      Uma surpresa animada você encontraria.
+      Um toque mágico de cor e movimento,
+      Venha descobrir o encanto desse momento!</p>
+  </section>
+
+  <script>
+    
+    const cursorAnimation = document.querySelector(".cursor");
+    const cursors = document.querySelectorAll(".cursor");
+
+    document.addEventListener("click", (e) => {
+      let x = e.clientX;
+      let y = e.clientY;
+
+      cursorAnimation.style.top = y + "px";
+      cursorAnimation.style.left = x + "px";
+
+      cursors.forEach((cursor) => {
+        cursor.classList.add("active");
+
+        function removeCursorActive(){
+          cursor.classList.remove("active");
+        }
+
+        setTimeout(removeCursorActive, 1000);
+      });
+      
+      let cursorClone = cursorAnimation.cloneNode(true);
+      document.querySelector("body").appendChild(cursorClone);
+
+      setTimeout(() => {
+        cursorClone.remove();
+      }, 1000);
+    });
+  </script>
+
+</body>
+</html>
+      

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/iconfavicon.png">
+    <script src="js/script.js"></script>
+    <title>Cursos FullStack</title>
+</head>
+
+<body onload="displayoff()" >
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Dev Web</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">INICIO</a></li>
+                    <li><a href="index.html">SOBRE </a></li>
+                    <li><a href="index.html">SERVIÇOS</a></li>
+                    <li><a href="index.html">DESIGN</a></li>
+                    <li><a href="index.html">CONTATO</a></li>
+                </ul>
+            </div>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Digite o a pesquisa">
+                <a href="#"><button class="btn">Pesquisar</button></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1><br>Web Design & <br><span>Programação</span><br>Cursos</h1>
+            <p class="par"><br>Bem-vindo ao curso de HTML! Este curso é projetado para ajudá-lo a desenvolver
+                habilidades
+                essenciais de criação de páginas da web utilizando HTML (Hypertext Markup Language).
+                HTML é a linguagem de marcação padrão utilizada para criar páginas web. É a base de todas as páginas
+                da
+                web e é essencial para qualquer desenvolvedor web. Durante este curso, você aprenderá os fundamentos
+                do HTML,
+                incluindo a estrutura básica de uma página web, tags HTML, estilos e formatação, links e imagens.
+                Você também aprenderá como criar formulários e tabelas,
+                e como incorporar elementos multimídia em suas páginas.</p>
+            <a href="#"><button class="cn" id="comecar" onclick="displayon()">Começar</button></a>
+
+            <div class="form" id="form">
+                <ion-icon name="close-circle-outline" class="close" onclick="displayoff()"></ion-icon>
+                    <h2>Login</h2>
+                    <input type="email" name="e-mail" placeholder="Digite seu e-mail">
+                    <input type="password" name="" placeholder="Digite sua senha">
+                    <a href="#"></a><button class="btnLogin">Entrar</button></a>
+                    <p class="link">Não tenho conta<br>
+                        <a href="#">Cadastre-se</a>
+                    </p>
+                    <p class="liw">Entrar com outra conta</p>
+
+                    <div class="icons">
+                        <a href="http://"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="http://"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="http://"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="http://"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</body>
+
+</html>
