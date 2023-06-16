@@ -48,7 +48,7 @@ formE1.addEventListener("submit", (event) => {
     searchImages();
 })
 
-// showMore.addEventListener("click", () =>{
-//     searchImages();
-// });
+ showMore.addEventListener("click", () =>{
+ searchImages();
+});
 
