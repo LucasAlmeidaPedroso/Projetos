@@ -1,6 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"
 import Blogdata from "./Blogdata"
-import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight"
 
 const Blog = () => {
   return (
@@ -15,6 +15,7 @@ const Blog = () => {
           <div className='contain grid topMarign'>
             {Blogdata.map((val) => {
               return (
+                // eslint-disable-next-line react/jsx-key
                 <div className='box'>
                   <div className='img'>
                     <img src={val.cover} alt='' />
@@ -25,7 +26,6 @@ const Blog = () => {
                     <p>{val.desc}</p>
                     <a href='/'>
                       Read More
-                      <KeyboardDoubleArrowRightIcon className='icon' />
                     </a>
                   </div>
                 </div>

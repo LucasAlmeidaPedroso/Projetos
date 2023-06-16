@@ -1,7 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react"
 import Data from "./Data"
-import FullscreenIcon from "@mui/icons-material/Fullscreen"
-import IosShareIcon from "@mui/icons-material/IosShare"
 
 const Work = () => {
   return (
@@ -15,6 +14,7 @@ const Work = () => {
         <div className='content'>
           {Data.map((val) => {
             return (
+              // eslint-disable-next-line react/jsx-key
               <div className='box'>
                 <div className='img'>
                   <img src={val.cover} alt='' />
@@ -25,8 +25,6 @@ const Work = () => {
                     <p>{val.desc}</p>
                   </div>
                   <div className='icon'>
-                    <FullscreenIcon className='iconWork' />
-                    <IosShareIcon className='iconWork' />
                   </div>
                 </div>
               </div>

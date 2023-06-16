@@ -1,9 +1,6 @@
+// eslint-disable-next-line no-unused-vars
 import React, { useState } from "react"
-import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined"
-import WorkIcon from "@mui/icons-material/Work"
-import GridViewTwoToneIcon from "@mui/icons-material/GridViewTwoTone"
-import MenuIcon from "@mui/icons-material/Menu"
-import CloseIcon from "@mui/icons-material/Close"
+
 import { Link } from "react-router-dom"
 
 const Header = () => {
@@ -40,14 +37,10 @@ const Header = () => {
                 <Link to='/contact'>Contact</Link>
               </li>
               <li className='icon'>
-                <SearchOutlinedIcon className='HeaderIcon' />
-                <WorkIcon className='HeaderIcon' />
-                <GridViewTwoToneIcon className='HeaderIcon' />
               </li>
             </ul>
           </div>
           <button className='navbar-items-icon' onClick={() => setSidebar(!sidebar)}>
-            {sidebar ? <CloseIcon /> : <MenuIcon />}
           </button>
         </div>
       </header>
